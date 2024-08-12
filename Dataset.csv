@@ -1,0 +1,138 @@
+﻿Common Name,SMILES,Density (g/cm³),Melting Point (°C)
+Water,O,1,0
+Ethanol,CC(O),0.789,-114.1
+Acetone,CC(=O)C,0.784,-95
+Benzene,c1ccccc1,0.876,5.5
+Methane,C,0.000422,-182.5
+Propane,CCC,0.493,-188
+Butane,CCCC,0.579,-138.3
+Ammonia,N,0.000682,-77.7
+Acetic Acid,CC(=O)O,1.049,16.6
+Sodium Chloride,[Na+].[Cl-],2.165,801
+Glucose,C(C1C(C(C(C(O1)O)O)O)O)O,1.54,146
+Sucrose,C(C1C(C(C(C(O1)O)O)O)O)OCC(C(C(C(O2)O)O)O)O2,1.587,185
+Hydrochloric Acid,Cl,1.18,-27.32
+Sulfuric Acid,OS(=O)(=O)O,1.84,10.36
+Nitric Acid,O=N(=O)O,1.51,-42
+Acetylene,C#C,0.001097,-80.8
+Formaldehyde,C=O,0.815,-92
+Carbon Dioxide,O=C=O,0.001977,-56.6
+Ethylene,C=C,0.001178,-169.2
+Hydrogen Peroxide,OO,1.45,-0.43
+Glycerol,C(C(CO)O)O,1.261,17.8
+Phenol,c1ccc(cc1)O,1.07,40.5
+Chloroform,ClC(Cl)Cl,1.489,-63.5
+Hexane,CCCCCC,0.655,-95
+Heptane,CCCCCCC,0.684,-90.6
+Octane,CCCCCCCC,0.703,-56
+Toluene,CCc1ccccc1,0.867,-95
+Xylene,CC1=CC=CC=C1,0.864,-47.87
+Aniline,NC1=CC=CC=C1,1.021,-6
+Benzaldehyde,O=CC1=CC=CC=C1,1.045,-26
+Acetonitrile,CC#N,0.786,-45.7
+Naphthalene,c1ccc2ccccc2c1,1.14,80.26
+Phenanthrene,c1ccc2c(c1)ccc3c2ccc3,1.179,101
+Anthracene,c1ccc2ccccc2c1,1.25,218
+Benzyl Alcohol,OCC1=CC=CC=C1,1.045,-15.3
+Styrene,C=Cc1ccccc1,0.909,-30.6
+Acetophenone,CC(=O)C1=CC=CC=C1,1.028,19.7
+Propionic Acid,CCC(=O)O,0.993,-20.8
+Butyric Acid,CCCC(=O)O,0.96,-5.1
+Valeric Acid,CCCCC(=O)O,0.935,-34.5
+Caproic Acid,CCCCCC(=O)O,0.92,-3.4
+Acrylic Acid,C=CC(=O)O,1.051,14
+Formic Acid,C(=O)O,1.22,8.4
+Acetamide,CC(=O)N,1.159,82.3
+Acetylacetone,CC(=O)CC(=O)C,0.975,-23.1
+Acetonitrile,CC#N,0.786,-45.7
+Benzoic Acid,O=C(O)c1ccccc1,1.265,122.4
+Benzyl Alcohol,OCC1=CC=CC=C1,1.045,-15.3
+Butanal,CCCC=O,0.8,-99.5
+Butane,CCCC,0.579,-138.3
+Butanone,CC(=O)CC,0.805,-86
+Butyl Acetate,CCCCOC(=O)C,0.882,-74.5
+Butylamine,CCCCN,0.74,-50
+Caproic Acid,CCCCCC(=O)O,0.92,-3.4
+Carbon Dioxide,O=C=O,0.001977,-56.6
+Carbon Tetrachloride,ClC(Cl)(Cl)Cl,1.586,-22.92
+Chlorine,ClCl,0.003214,-101.5
+Chlorobenzene,Clc1ccccc1,1.106,-45.6
+Chloroethane,CCCl,0.897,-138.3
+Chloroform,ClC(Cl)Cl,1.489,-63.5
+Cyclohexane,C1CCCCC1,0.779,6.47
+Cyclopentane,C1CCCC1,0.746,-93.9
+Decane,CCCCCCCCCC,0.73,-29.7
+Dichloromethane,ClCCl,1.325,-96.7
+Diethyl Ether,CCOCC,0.713,-116.3
+Diethylamine,CCNCC,0.707,-50.8
+Diisopropyl Ether,CC(C)OC(C)C,0.725,-60
+Dimethyl Ether,COC,0.001951,-141.5
+Dimethyl Sulfate,COS(=O)(=O)OC,1.33,-31.7
+Dimethylamine,CNC,0.68,-93
+Dioxane,O1CCOCC1,1.03,11.8
+Dodecane,CCCCCCCCCCCC,0.749,-10.7
+Ethanol,CC(O),0.789,-114.1
+Ethyl Acetate,CCOC(=O)C,0.902,-83.6
+Ethylbenzene,CCc1ccccc1,0.867,-94.97
+Ethylene,C=C,0.001178,-169.2
+Ethylene Glycol,OCCO,1.113,-13
+Formamide,C(=O)N,1.133,2.55
+Formic Acid,C(=O)O,1.22,8.4
+Freon-12,C(Cl)(F)C(Cl)(F)F,1.486,-157.5
+Furan,c1ccoc1,0.936,-85.6
+Glucose,C(C1C(C(C(C(O1)O)O)O)O)O,1.54,146
+Glycerol,C(C(CO)O)O,1.261,17.8
+Heptane,CCCCCCC,0.684,-90.6
+Hexane,CCCCCC,0.655,-95
+Hydrazine,N1N,1.003,2
+Hydrochloric Acid,Cl,1.18,-27.32
+Hydrogen,H,0.00008988,-259.1
+Hydrogen Peroxide,OO,1.45,-0.43
+Isobutyl Alcohol,CC(C)CO,0.802,-108
+Isobutylene,CC(=C)C,0.587,-140
+Isopentane,CC(C)CCC,0.62,-160
+Isoprene,C=C(C)C=C,0.681,-145.95
+Isopropanol,CC(O)C,0.785,-89.5
+Kerosene,Mix of hydrocarbons,0.78-0.81,-40 to -30
+Lactic Acid,CC(O)C(=O)O,1.209,18
+Methane,C,0.000422,-182.5
+Methanol,CO,0.792,-97.6
+Methyl Acetate,COC(=O)C,0.932,-98
+Methylamine,CN,0.699,-93.1
+Methylbenzene,CC1=CC=CC=C1,0.867,-95
+Methylcyclohexane,CC1CCCCC1,0.77,-126
+Methylene Chloride,ClCCl,1.325,-96.7
+Naphthalene,c1ccc2ccccc2c1,1.14,80.26
+Nitrate,[O-]N+O,2.26,-42
+Nitrobenzene,O=N+c1ccccc1,1.199,5.7
+Nitrogen,N#N,0.001251,-210.1
+Nitrogen Dioxide,O=N+[O-],1.448,11.2
+Octane,CCCCCCCC,0.703,-56
+Oxalic Acid,C(=O)(C(=O)O)O,1.9,189.5
+Ozone,O=O=O,0.002144,-192.5
+Pentane,CCCCC,0.626,-129.7
+Phenanthrene,c1ccc2c(c1)ccc3c2ccc3,1.179,101
+Phenol,c1ccc(cc1)O,1.07,40.5
+Phosphoric Acid,OP(=O)(O)O,1.885,42.35
+Propane,CCC,0.493,-188
+Propanol,CCCO,0.804,-126
+Propene,CC=C,0.00181,-185.2
+Propyne,CC#C,0.691,-102.7
+Pyridine,c1ccncc1,0.981,-41.6
+Salicylic Acid,OC1=CC=CC=C1C(=O)O,1.443,159
+Sodium Bicarbonate,OC(=O)O.[Na+],2.159,50
+Sodium Carbonate,[Na+].[Na+].[O-]C([O-])=O,2.53,851
+Sodium Chloride,[Na+].[Cl-],2.165,801
+Sodium Hydroxide,[OH-].[Na+],2.13,318
+Stearic Acid,CCCCCCCCCCCCCCCCCC(=O)O,0.847,69.6
+Styrene,C=Cc1ccccc1,0.909,-30.6
+Sulfuric Acid,OS(=O)(=O)O,1.84,10.36
+Tetrahydrofuran,C1CCOC1,0.889,-108.4
+Thionyl Chloride,ClC(=S)Cl,1.638,-104.5
+Toluene,CCc1ccccc1,0.867,-95
+Triethylamine,CCN(CC)CC,0.726,-114.7
+Trichloroethene,ClC(Cl)=CCl,1.463,-73.4
+Trifluoroacetic Acid,CC(=O)O,1.489,-15.5
+Urea,C(=O)(N)N,1.323,132.7
+Vinyl Acetate,CC(=O)OC=C,0.934,-93.2
+Xylene,CC1=CC=CC=C1,0.864,-47.87
