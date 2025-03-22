@@ -13,7 +13,7 @@ model:
   model_name: "molecularTransformer.pth"
 
 training:
-  num_epochs: 20
+  num_epochs: 2
   pretrained: False # is model pretrained weights already available?
   save_freq: 2 # how frequently to save model every n epochs
   learning_rate: 1e-5

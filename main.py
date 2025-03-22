@@ -17,8 +17,18 @@ def main():
     properties, smiles_indices, idx_to_char, char_to_idx, scaler = preprocess_data(
         configuration.data.raw_csv_path
     )
-    save_dataset(properties, smiles_indices, idx_to_char, char_to_idx)
-    run_training_pipeline()
+
+    save_dataset(
+        properties,
+        smiles_indices,
+        idx_to_char,
+        char_to_idx,
+        configuration.data.test_data_size,
+        scaler,
+        configuration.data.processed_dataset_path
+        )
+
+    run_training_pipeline(configuration)
 
 if __name__ == "__main__":
     main()

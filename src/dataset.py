@@ -26,7 +26,7 @@ def load_dataset(
     with open(os.path.join(data_dir, "train_dataset.pkl"), 'rb') as f:
         train_props, train_smiles = pickle.load(f)
 
-    with open(os.path.join(data_dir, "test_dataset.pkl")) as f:
+    with open(os.path.join(data_dir, "test_dataset.pkl"), 'rb') as f:
         test_props, test_smiles = pickle.load(f)
 
     with open(os.path.join(data_dir, "char_mappings.pkl"), 'rb') as f:

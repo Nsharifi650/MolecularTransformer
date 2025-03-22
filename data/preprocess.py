@@ -40,9 +40,11 @@ def preprocess_data(
         csv_file: str
     ) -> tuple[list[float],list[int],dict[str,int],dict[int, str], StandardScaler]:
     data = pd.read_csv(csv_file)
+    # removing any rows which have missing isosmiles
+    data = data.dropna(subset=['isosmiles'])
     properties = data[['polararea', 'complexity', 'heavycnt', 'hbonddonor', 'hbondacc']].values
     smiles = data['isosmiles'].values
-    logger.info("length of smiles: ", smiles.shape)
+    logger.info(f"length of smiles: {smiles.shape}")
     # print(f"smiles: {smiles}")
 
     scaler = StandardScaler()
