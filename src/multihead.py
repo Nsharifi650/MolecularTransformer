@@ -14,8 +14,8 @@ class MultiHeadAttention(nn.Module):
         try:
             assert d_model % num_heads == 0
         except Exception as e:
-            logger.error("dimension of the embedding model is not divisable by number of heads")
-            raise ValueError("dimension of the embedding model is not divisable by number of heads")
+            logger.error(f"d_model ({d_model}) must be divisible by num_heads ({num_heads})")
+            raise ValueError(f"d_model ({d_model}) must be divisible by num_heads ({num_heads})")
         
         self.d_models = d_model
         self.num_heads = num_heads

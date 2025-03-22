@@ -21,7 +21,7 @@ def save_dataset(
     os.makedirs(output_dir, exist_ok=True)
     train_props, test_props, train_smiles, test_smiles = train_test_split(properties, smiles_indices, test_size=test_size)
 
-    with open(os.path.join(output_dir, "train_dateset.pkl"), 'wb') as f:
+    with open(os.path.join(output_dir, "train_dataset.pkl"), 'wb') as f:
         pickle.dump((train_props, train_smiles), f)
     
     with open(os.path.join(output_dir, "test_dataset.pkl"), 'wb') as f:

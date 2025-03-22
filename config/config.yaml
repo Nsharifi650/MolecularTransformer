@@ -1,0 +1,20 @@
+data:
+  raw_csv_path: "data/raw/pubchem.csv"
+  processed_dataset_path: "data/"
+  test_data_size: 0.1
+
+model:
+  num_layers: 8
+  enc_d_model: 5 # number of properties
+  dec_d_model: 128
+  dec_num_heads: 8
+  enc_dff: 128 # dimension of the feed forward layer
+  pe_target: 1000 # positional encoding
+  model_name: "molecularTransformer.pth"
+
+training:
+  num_epochs: 20
+  pretrained: False # is model pretrained weights already available?
+  save_freq: 2 # how frequently to save model every n epochs
+  learning_rate: 1e-5
+  batch_size: 128

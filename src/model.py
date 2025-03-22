@@ -3,20 +3,35 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from src.EncoderDecoder import EncoderLayer, Decoder
+from src.config import Config
 
 class Transformer(nn.Module):
-    def __init__(self,num_layers, enc_d_model, dec_d_model,
-                 dec_num_heads, enc_dff, 
-                dec_dff, target_vocab_size, pe_target):
+    def __init__(self, config: Config, target_vocab_size: int):
         super(Transformer, self).__init__()
 
         # self.encoder = Encoder(num_layers, d_model, num_heads, dff, input_vocab_size)
-        self.encoder = EncoderLayer(enc_d_model, enc_dff)
-        self.decoder = Decoder(num_layers, dec_d_model, dec_num_heads, dec_dff, target_vocab_size, pe_target)
-        self.final_layer = nn.Linear(dec_d_model, target_vocab_size)
+        self.encoder = EncoderLayer(
+            config.model.enc_d_model, 
+            config.model.enc_dff
+            )
+        
+        dec_dff = config.model.enc_dff
+        self.decoder = Decoder(
+            config.model.num_layers, 
+            config.model.dec_d_model, 
+            config.model.dec_num_heads,
+            dec_dff, 
+            target_vocab_size,
+            config.model.pe_target
+            )
+        
+        self.final_layer = nn.Linear(
+            config.model.dec_d_model, 
+            target_vocab_size
+            )
 
         
-    def forward(self, properties, target, look_ahead_mask, dec_padding_mask, training):
+    def forward(self, properties, target, look_ahead_mask, dec_padding_mask, training: bool = True):
         enc_output = self.encoder(properties)
 
         enc_output_reshaped = enc_output.unsqueeze(1).repeat(1, target.shape[1],1)
