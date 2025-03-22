@@ -3,6 +3,8 @@
 
 This project involves predicting molecular structures based on given desired physical properties using a Transformer-based neural network model. The model takes physical properties such as polar surface area, molecular complexity, heavy atom count, hydrogen bond donors, and hydrogen bond acceptors as input and generates the corresponding molecular structure in the form of a SMILES (Simplified Molecular Input Line Entry System) string.
 
+This repository is the source code for the article: [Generative AI: Transformers For Molecular Design](https://medium.com/ai-advances/transformers-for-molecular-generation-7434f5bef37a)
+
 #### Project Motivation
 The ability to predict molecular structures based on desired properties is of significant interest in fields such as drug discovery, material science, and chemistry. Traditional methods often require substantial computational resources and time. This project leverages the Transformer architecture, originally designed for natural language processing tasks, to generate valid molecular structures efficiently and accurately based on a set of input properties.
 
