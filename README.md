@@ -33,3 +33,16 @@ Feed-Forward Neural Networks: Applied after attention layers to introduce non-li
 Positional Encoding: Injects sequential information into the model, crucial for generating valid SMILES strings.
 Masking: Includes both padding and look-ahead masks to ensure correct sequence generation.
 Installation
+
+#### Running Guidlines
+1) complete configuration file: config/config.yaml with desired settings and paths
+2) run model training from root directory:
+python main.py
+
+3) inference
+For a csv file containing the desired physical properties, you can generated a molecule using:
+python -m src.inference \
+  --input_csv data/inference_input.csv \
+  --output_csv results/predicted_smiles.csv
+
+this will save the the predicted results locally in the given directory
