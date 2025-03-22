@@ -8,7 +8,6 @@ from utils.logging_config import get_logger
 
 logger = get_logger(__name__)
 
-
 class MultiHeadAttention(nn.Module):
     def __init__(self, d_model, num_heads):
         super(MultiHeadAttention, self).__init__()

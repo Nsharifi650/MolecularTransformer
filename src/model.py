@@ -4,7 +4,6 @@ import torch.nn.functional as F
 
 from src.EncoderDecoder import EncoderLayer, Decoder
 
-
 class Transformer(nn.Module):
     def __init__(self,num_layers, enc_d_model, dec_d_model,
                  dec_num_heads, enc_dff, 
@@ -28,9 +27,7 @@ class Transformer(nn.Module):
         #####during training:
         if training:
             return ffl_output
-        
         else:
-
         ##### During inference::
             probabilities = F.softmax(ffl_output, dim=-1)
             predicted_tokens = torch.argmax(probabilities, dim=-1)

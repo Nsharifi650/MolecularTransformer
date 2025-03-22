@@ -13,8 +13,9 @@ def save_dataset(
         properties: list[float],
         smiles_indices: list[int],
         idx_to_char: dict[int, str],
+        char_to_idx: dict[str, int],
         test_size: float,
-        scaler,
+        scaler: StandardScaler,
         output_dir: str
     ) -> None:
     os.makedirs(output_dir, exist_ok=True)
@@ -27,7 +28,7 @@ def save_dataset(
         pickle.dump((test_props, test_smiles), f)
     
     with open(os.path.join(output_dir, "char_mappings.pkl"), "wb") as f:
-        pickle.dump((idx_to_char, idx_to_char), f)
+        pickle.dump((idx_to_char, char_to_idx), f)
 
     with open(os.path.join(output_dir, "scaler.pkl"), "wb") as f:
         pickle.dump(scaler, f)
@@ -35,7 +36,9 @@ def save_dataset(
     logger.info(f"Saved preprocessing datasets and mappings in the directory: {output_dir}")
 
 
-def preprocess_data(csv_file: str) -> tuple[list[float],list[int],dict[str,int], any]:
+def preprocess_data(
+        csv_file: str
+    ) -> tuple[list[float],list[int],dict[str,int],dict[int, str], StandardScaler]:
     data = pd.read_csv(csv_file)
     properties = data[['polararea', 'complexity', 'heavycnt', 'hbonddonor', 'hbondacc']].values
     smiles = data['isosmiles'].values
@@ -62,6 +65,6 @@ def preprocess_data(csv_file: str) -> tuple[list[float],list[int],dict[str,int],
     ]
     logger.info("Data processing: conversion of SMILEs notation of molecules to sequence complete")
 
-    return properties, smiles_indices, idx_to_char, scaler
+    return properties, smiles_indices, idx_to_char, char_to_idx,scaler
 
 
