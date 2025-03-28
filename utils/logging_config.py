@@ -1,6 +1,7 @@
 import logging
 
-def get_logger(name = __name__, log_file='Logs.log'):
+
+def get_logger(name=__name__, log_file="Logs.log"):
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
     file_handler = logging.FileHandler(log_file)
@@ -8,7 +9,9 @@ def get_logger(name = __name__, log_file='Logs.log'):
     file_handler.setLevel(logging.DEBUG)
     console_handler.setLevel(logging.ERROR)
 
-    formatter = logging.Formatter('%(asctime)s - %(message)s - Line: %(lineno)d', datefmt='%Y-%m-%d %H:%M:%S')
+    formatter = logging.Formatter(
+        "%(asctime)s - %(message)s - Line: %(lineno)d", datefmt="%Y-%m-%d %H:%M:%S"
+    )
     file_handler.setFormatter(formatter)
     console_handler.setFormatter(formatter)
 

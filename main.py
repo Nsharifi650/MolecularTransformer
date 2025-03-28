@@ -1,16 +1,16 @@
-import os
-
 import yaml
 
 from data.preprocess import preprocess_data, save_dataset
 from src.train import run_training_pipeline
 from src.config import Config
 
+
 def load_config(file_path: str) -> Config:
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         config_dict = yaml.safe_load(file)
 
     return Config(**config_dict)
+
 
 def main():
     configuration = load_config("config/config.yaml")
@@ -25,11 +25,11 @@ def main():
         char_to_idx,
         configuration.data.test_data_size,
         scaler,
-        configuration.data.processed_dataset_path
-        )
+        configuration.data.processed_dataset_path,
+    )
 
     run_training_pipeline(configuration)
 
+
 if __name__ == "__main__":
     main()
-
